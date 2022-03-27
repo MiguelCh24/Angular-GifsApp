@@ -12,8 +12,15 @@ export class SidebarComponent {
   get historial() {
     return this.listaService.historial;
   }
-  constructor(private listaService: GifsService) { }
 
 
+
+  constructor(private listaService: GifsService,) { }
+
+  buscar(a: string) {
+
+    this.listaService.insertargifs(a);
+
+  }
 
 }
